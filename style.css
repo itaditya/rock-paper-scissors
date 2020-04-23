@@ -1,0 +1,88 @@
+html,
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.game-wrapper {
+  min-height: 100vh;
+  background-color: #15202b;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.players-wrapper {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.player {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  display: none;
+  width: 300px;
+  height: 300px;
+}
+
+.item.picked {
+  display: block;
+}
+
+.item-picker {
+  margin-top: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.item-picker.hidden {
+  visibility: hidden;
+}
+
+.item-btn {
+  background-color: #fff;
+  color: #000;
+  font-size: 42px;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 20px;
+  transition: 0.2s ease-in-out;
+}
+
+.item-btn:nth-child(2) {
+  margin: 0 30px;
+}
+
+.item-btn:hover {
+  transform: scale(1.1);
+}
+
+.item-btn:focus,
+.item-btn:active {
+  transition: 0.04s ease-in-out;
+  background-color: #333;
+  color: #fff;
+}
+
+.score-wrapper {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #192734;
+  font-size: 60px;
+}

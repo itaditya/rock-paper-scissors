@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-wrapper">
+      <div class="players-wrapper">
+        <div class="player player-human">
+          <div class="items-wrapper">
+            <img class="item js-item-user-rock" src="images/rock.png" alt="Rock" />
+            <img class="item js-item-user-paper picked" src="images/paper.png" alt="Paper" />
+            <img class="item js-item-user-scissors" src="images/scissors.png" alt="Scissors" />
+          </div>
+          <div class="item-picker">
+            <button class="item-btn js-btn-rock">Rock</button>
+            <button class="item-btn js-btn-paper">Paper</button>
+            <button class="item-btn js-btn-scissors">Scissors</button>
+          </div>
+        </div>
+        <div class="player player-cpu">
+          <div class="items-wrapper">
+            <img class="item js-item-cpu-rock" src="images/rock.png" alt="Rock" />
+            <img class="item js-item-cpu-paper" src="images/paper.png" alt="Paper" />
+            <img class="item js-item-cpu-scissors picked" src="images/scissors.png" alt="Scissors" />
+          </div>
+          <div class="item-picker hidden"></div>
+        </div>
+      </div>
+      <div class="score-wrapper">
+        <span>User Won</span>
+        &nbsp;
+        <span class="js-user-score">0</span>
+        &nbsp;
+        <span>out of</span>
+        &nbsp;
+        <span class="js-total-moves">0</span>
+        &nbsp;
+        <span>games</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
