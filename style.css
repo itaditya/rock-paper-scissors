@@ -49,10 +49,6 @@ body {
   align-items: center;
 }
 
-.item-picker.hidden {
-  visibility: hidden;
-}
-
 .item-btn {
   background-color: #fff;
   color: #000;
@@ -85,4 +81,43 @@ body {
   justify-content: center;
   background-color: #192734;
   font-size: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .players-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .player {
+    height: auto;
+  }
+
+  .item {
+    width: 100px;
+    height: 100px;
+  }
+
+  .item-picker {
+    margin: 0;
+    margin-top: 40px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .item-btn {
+    font-size: 18px;
+  }
+
+  .item-btn:nth-child(2) {
+    margin: 20px 0;
+  }
+
+  .score-wrapper {
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
 }
