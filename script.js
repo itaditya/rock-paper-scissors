@@ -31,8 +31,8 @@ function newMove(userChoice) {
     userWins += 1;
   }
 
-  const userQuery = `.js-item-user-${userChoice}`;
-  const computerQuery = `.js-item-cpu-${computerChoice}`;
+  const userQuery = '.js-item-user-' + userChoice;
+  const computerQuery = '.js-item-cpu-' + computerChoice;
 
   document.querySelectorAll('.picked').forEach(function (item) {
     item.classList.remove('picked');
